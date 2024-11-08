@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Air university</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link / href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      overflow-y: scroll;
+    }
+
+    .scr {
+      height: 90vh;
+      width: 100wh;
+    }
+
+    .bag {
+      background-image: url("https://www.Stanford.edu/wp-content/uploads/2023/10/Hero-3-2-2048x1362.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: white;
+      height: 100vh;
+      width: 100wh;
+      background-repeat: no-repeat;
+    }
+
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .navbar-brand {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .main-content {
+      padding: 150px 0;
+      text-align: center;
+    }
+
+    .main-heading {
+      font-size: 4em;
+      font-weight: bold;
+    }
+
+    .explore-btn {
+      background-color: #a51c30;
+      color: white;
+      padding: 10px 20px;
+      font-size: 1.2em;
+      margin-top: 30px;
+      text-transform: uppercase;
+    }
+
+    .navbar-brand {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .secondary-navbar {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 5px 0;
+      font-size: 0.9em;
+    }
+
+    .secondary-navbar .nav-link {
+      color: white;
+      opacity: 0.9;
+    }
+
+    .mtr {
+      margin-top: 10%;
+    }
+
+    /* Background blur effect */
+    .background {
+      background-image: url("https://www.stanford.edu/wp-content/uploads/2024/08/Tadashi-homesite-1499x750.jpg");
+      background-size: cover;
+      background-position: center;
+      filter: blur(6px);
+      position: absolute;
+      width: 100wh;
+      height: 50vh;
+      /* top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0; */
+      z-index: -1;
+    }
+
+    /* Overlay styling */
+    .overlay-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 50vh;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      padding: 2rem;
+    }
+
+    /* Profile image styling */
+    .profile-image {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+
+    .quote-text {
+      font-size: 1.25rem;
+      font-weight: 300;
+      max-width: 800px;
+      margin-bottom: 1rem;
+    }
+
+    .quote-author {
+      font-weight: bold;
+    }
+
+    .quote-role {
+      font-size: 0.9rem;
+      color: #000000;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="sticky-top " style="height: 10%;">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="#">Air University</a>
+      <button class="navbar-toggler">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Academics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Research</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Campus Life</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Admission</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="secondary-navbar">
+      <div class="container">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Information for:</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Students</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Faculty & Staff</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Families</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Visitors</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Alumni</a></li>
+        </ul>
+      </div>
+    </nav>
+  </nav>
+  <!-- ############################################### Banner #################################################### -->
+  <section>
+    <div class="bag main-content d-flex flex-column justify-content-center align-items-center" style="height:100vh;">
+      <h1 class="main-heading">Air university</h1>
+      <button class="btn explore-btn">Explore Air university</button>
+    </div>
+  </section>
+  <!-- ############################################## 2nd Section #################################################### -->
+  <section class=" d-flex align-items-center mtr text-black pt-5  pb-5 mb-5 ">
+    <div class="container w-75 pb-5">
+      <div class="text-center w-100">
+        <h2 class="font-weight-bold">A Societal Mission</h2>
+        <p class="mt-4 mx-auto fw-medium">
+          Air was founded almost 150 years ago on a bedrock of societal purpose. Our mission is to contribute to the world by educating
+          students for lives of leadership and contribution with integrity; advancing fundamental knowledge and cultivating creativity;
+          leading in pioneering research for effective clinical therapies; and accelerating solutions and amplifying their impact.
+          Air was founded almost 150 years ago on a bedrock of societal purpose. Our mission is to contribute to the world by educating
+          students for lives of leadership and contribution with integrity; advancing fundamental knowledge and cultivating creativity;
+          leading in pioneering research for effective clinical therapies; and accelerating solutions and amplifying their impact.
+          Air was founded almost 150 years ago on a bedrock of societal purpose. Our mission is to contribute to the world by educating
+          students for lives of leadership and contribution with integrity; advancing fundamental knowledge and cultivating creativity;
+          leading in pioneering research for effective clinical therapies; and accelerating solutions and amplifying their impact.
+        </p>
+        <a href="#" class="btn btn-danger mt-3">More about Air</a>
+      </div>
+    </div>
+  </section>
+  <!-- ##################################################### 3rd Section ########################## -->
+
+  <section class="src">
+    <div class="container text-center my-5">
+      <h2 class="fw-bold">Campus News</h2>
+      <p class="text-muted">Stories about people, research, and innovation across the Farm</p>
+
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-6">
+          <div class="card h-100">
+            <img src="https://www.stanford.edu/wp-content/uploads/2024/10/20241009_Amulets_95A8715.jpg" height="280" class="card-img-top"
+              alt="News 1">
+            <div class="card-body">
+              <h6 class="text-uppercase text-muted">Health & Medicine</h6>
+              <h5 class="card-title">Stanford launches center focused on human and planetary health</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-3">
+          <div class="card h-100">
+            <img src="https://www.stanford.edu/wp-content/uploads/2021/10/dish-andrew-lg-1499x551.jpg" height="280" class="card-img-top"
+              alt="News 2">
+            <div class="card-body">
+              <h6 class="text-uppercase text-danger">Business</h6>
+              <h5 class="card-title">Mapping the maze where the IRS could find billions in unpaid taxes</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-3">
+          <div class="card h-100">
+            <img src="https://www.stanford.edu/wp-content/uploads/2024/10/20240814_Office_Objects_with_Nate_Persily-_95A1019_-big-grin.jpg"
+              height="280" class="card-img-top" alt="News 3">
+            <div class="card-body">
+              <h6 class="text-uppercase text-danger">Law</h6>
+              <h5 class="card-title">Nate Persily’s mini museum of election history</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Card 1 -->
+
+        <!-- Card 2 -->
+        <div class="col-md-3">
+          <div class="card h-100">
+            <img src="https://www.stanford.edu/wp-content/uploads/2024/11/20201103_Vote11.jpg" height="280" class="card-img-top"
+              alt="News 2">
+            <div class="card-body">
+              <h6 class="text-uppercase text-danger">Business</h6>
+              <h5 class="card-title">Mapping the maze where the IRS could find billions in unpaid taxes</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-3">
+          <div class="card h-100">
+            <img src="https://www.stanford.edu/wp-content/uploads/2024/10/20240814_Office_Objects_with_Nate_Persily-_95A1019_-big-grin.jpg"
+              height="280" class="card-img-top" alt="News 3">
+            <div class="card-body">
+              <h6 class="text-uppercase text-danger">Law</h6>
+              <h5 class="card-title">Nate Persily’s mini museum of election history</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100">
+            <img
+              src="https://www.stanford.edu/wp-content/uploads/2024/10/A-woman-and-children-in-an-Indian-farm-field.-credit_EqualStock-_-Unsplash.jpg"
+              height="280" class="card-img-top" alt="News 1">
+            <div class="card-body">
+              <h6 class="text-uppercase text-muted">Health & Medicine</h6>
+              <h5 class="card-title">Stanford launches center focused on human and planetary health</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="">
+    <!-- <div class="background"> -->
+    <div class="overlay-content bg-light">
+      <img src="https://www.stanford.edu/wp-content/uploads/2024/08/Tadashi-homesite-profile-240x240.png" alt="Profile image"
+        class="profile-image">
+      <p class="quote-text">
+        “I think about all the projects that students throw themselves at quarter after quarter, just really expanding and stretching their
+        minds. … Stanford allows you to experience evolutions of yourself.”
+      </p>
+      <p class="quote-author">Yannie Tan</p>
+      <p class="quote-role">Class of 2024</p>
+      <a href="#" class="btn btn-link text-white">More &gt;</a>
+      <!-- </div> -->
+    </div>
+    <!-- Overlay content -->
+  </section>
+  <!-- ##################################################### Graduate Education ##### -->
+  <section class="scr my-5 py-5">
+    <div class="container text-center my-5">
+      <div class="display-4 fw-bold">Academics</div>
+      <p class="lead">Preparing students to make meaningful contributions to society as engaged citizens and leaders in a complex world</p>
+    </div>
+
+    <!-- Education Section -->
+    <div class="container">
+      <div class="row text-center">
+        <!-- Undergraduate Education -->
+        <div class="col-md-4 mb-4">
+          <div class="card border-0">
+            <div class="position-relative">
+              <img src="https://www.stanford.edu/wp-content/uploads/2022/04/Campus-life-1-1499x940.jpg" class="img-fluid rounded"
+                alt="Undergraduate Education">
+            </div>
+            <div class="mt-3">
+              <div class="fw-bold h5">Undergraduate Education</div>
+              <p class="text-muted">Rich learning experiences that provide a broad liberal arts foundation and deep subject-area expertise.
+              </p>
+              <a href="#" class="text-primary text-decoration-none">Undergraduate Education &gt;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Graduate Education -->
+        <div class="col-md-4 mb-4">
+          <div class="card border-0">
+            <div class="position-relative">
+              <img src="https://www.stanford.edu/wp-content/uploads/2022/04/Campus-life-2-1499x940.jpg" class="img-fluid rounded"
+                alt="Graduate Education">
+            </div>
+            <div class="mt-3">
+              <div class="fw-bold h5">Graduate Education</div>
+              <p class="text-muted">Unsurpassed opportunities to participate in the advancement of entire fields of knowledge.</p>
+              <a href="#" class="text-primary text-decoration-none">Graduate Education &gt;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Driving Impact -->
+        <div class="col-md-4 mb-4">
+          <div class="card border-0">
+            <div class="position-relative">
+              <img src="https://www.stanford.edu/wp-content/uploads/2022/04/Campus-life-3-1499x940.jpg" class="img-fluid rounded"
+                alt="Driving Impact">
+            </div>
+            <div class="mt-3">
+              <div class="fw-bold h5">Driving Impact</div>
+              <p class="text-muted">Continuing adult education, executive and professional programs, and programs for K-12 students.</p>
+              <a href="#" class="text-primary text-decoration-none">Lifelong Learning &gt;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Schools Section -->
+    <div class="container text-center mt-5">
+      <h3 class="fw-bold mb-3">Seven schools in which to pursue your passions</h3>
+      <div class="d-flex justify-content-center flex-wrap">
+        <div class="mx-2"><a href="#" class="text-primary text-decoration-none">Medicine</a></div>
+        <div class="mx-2"><a href="#" class="text-primary text-decoration-none">Law</a></div>
+        <div class="mx-2"><a href="#" class="text-primary text-decoration-none">Humanities & Sciences</a></div>
+        <div class="mx-2"><a href="#" class="text-primary text-decoration-none">Engineering</a></div>
+        <div class="mx-2"><a href="#" class="text-primary text-decoration-none">Education</a></div>
+        <div class="mx-2"><a href="#" class="text-primary text-decoration-none">Sustainability</a></div>
+        <div class="mx-2"><a href="#" class="text-primary text-decoration-none">Business</a></div>
+      </div>
+    </div>
+  </section>
+  <section class="py-5 mt-5">
+    <div class="container text-center">
+      <!-- Title -->
+      <h1 class="fw-bold">Campus Life</h1>
+      <p class="lead">Building a vibrant community of creative and accomplished people from around the world</p>
+
+      <!-- Row with 3 Columns -->
+      <div class="row text-start">
+        <!-- Student Life -->
+        <div class="col-md-4 mb-4">
+          <div class="card border-0">
+            <img src="https://www.stanford.edu/wp-content/uploads/2022/04/Gym-champs-1499x937.jpg" class="card-img-top" alt="Student Life">
+            <div class="card-body">
+              <h5 class="fw-bold">Student Life</h5>
+              <p>A residential campus with diverse housing, exceptional dining, and over 600 student organizations</p>
+              <a href="#" class="text-decoration-none text-primary">Student Affairs &gt;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Arts & Culture -->
+        <div class="col-md-4 mb-4">
+          <div class="card border-0">
+            <img src="https://www.stanford.edu/wp-content/uploads/2024/08/Ledecky2-1499x937.png" class="card-img-top" alt="Arts & Culture">
+            <div class="card-body">
+              <h5 class="fw-bold">Arts & Culture</h5>
+              <p>A rich tradition of fostering creativity and a vibrant arts district on campus</p>
+              <a href="#" class="text-decoration-none text-primary">Stanford Arts &gt;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recreation & Wellness -->
+        <div class="col-md-4 mb-4">
+          <div class="card border-0">
+            <img src="https://www.stanford.edu/wp-content/uploads/2022/04/Impact-1499x937.jpg" class="card-img-top"
+              alt="Recreation & Wellness">
+            <div class="card-body">
+              <h5 class="fw-bold">Recreation & Wellness</h5>
+              <p>State-of-the-art facilities and fitness programs to encourage movement and play</p>
+              <a href="#" class="text-decoration-none text-primary">Recreation & Wellness &gt;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Button -->
+      <div class="mt-4">
+        <a href="#" class="btn btn-danger px-4 py-2 fw-bold">More about campus life</a>
+      </div>
+    </div>
+  </section>
+  <!-- More about admission -->
+  <section>
+    <div class="text-center my-5">
+      <h1 class="display-4 fw-bold">Admission</h1>
+      <p class="lead">Offering extraordinary freedom to explore, to collaborate, and to challenge yourself</p>
+    </div>
+
+    <!-- Image Section -->
+    <div class="">
+      <div class="row justify-content-center">
+        <div class="col-xl-11">
+          <img src="https://www.stanford.edu/wp-content/uploads/2022/08/Maya-admission.jpg" alt="Students walking on campus"
+            class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Additional Information Section -->
+  <div class="container text-center my-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h5 class="fw-bold">Explore the possibilities of a Stanford education as you map out your college journey.</h5>
+        <p>We look for distinctive students who exhibit an abundance of energy and curiosity in their classes, activities, projects,
+          research, and lives.</p>
+      </div>
+      <div class="col-md-6">
+        <h5 class="fw-bold">Stanford meets the full financial need of every admitted undergrad who qualifies for assistance.</h5>
+        <p>More than two-thirds of undergrads receive some form of financial assistance. Generally, tuition is covered for families with
+          incomes below $150,000.</p>
+      </div>
+    </div>
+    <button type="button" class="btn btn-danger mt-4">More about admission</button>
+  </div>
+
+  <!-- Landscape Image Section -->
+  <div class="" style="height: 10%;">
+    <div class="row justify-content-center">
+      <div class="col-md-12">
+        <img src="https://www.stanford.edu/wp-content/uploads/2021/10/dish-andrew-lg-1499x551.jpg" alt="Landscape view of campus area"
+          class="img-fluid">
+      </div>
+    </div>
+  </div>
+  <!-- Footer Section -->
+  <footer class="bg-light pt-5 ">
+    <div class="">
+      <div class="px-5">
+        <div class="row text-start text-uppercase fw-bold mb-4 ">
+          <div class="col-md-2">
+            <div class="text-danger">Schools</div>
+            <p>Business</p>
+            <p>Education</p>
+            <p>Engineering</p>
+            <p>Humanities & Sciences</p>
+            <p>Law</p>
+            <p>Medicine</p>
+            <p>Sustainability</p>
+          </div>
+          <div class="col-md-2">
+            <div class="text-danger">Academics</div>
+            <p>Undergraduate Majors</p>
+            <p>Graduate Programs</p>
+          </div>
+          <div class="col-md-2">
+            <div class="text-danger">Health Care</div>
+            <p>Stanford Health Care</p>
+            <p>Stanford Children's Health</p>
+          </div>
+          <div class="col-md-2">
+            <div class="text-danger">Research</div>
+            <p>Research Centers A - Z</p>
+            <p>Libraries</p>
+            <div class="text-danger mt-3">Online Learning</div>
+            <p>Stanford Online</p>
+          </div>
+          <div class="col-md-2">
+            <div class="text-danger">About Stanford</div>
+            <p>Facts</p>
+            <p>History</p>
+            <p>Accreditation</p>
+            <div class="text-danger mt-3">Admission</div>
+            <p>Undergraduate</p>
+            <p>Graduate</p>
+            <p>Financial Aid</p>
+          </div>
+          <div class="col-md-2">
+            <div class="text-danger">Resources</div>
+            <p>Campus Map</p>
+            <p>Community Engagement</p>
+            <p>Directory</p>
+            <p>Stanford Profiles</p>
+          </div>
+        </div>
+
+        <!-- Buttons and Social Media Icons -->
+        <div class="row">
+          <div class="col-md-6 mb-3 d-flex justify-content-start gap-2">
+            <button class="btn btn-outline-dark">Applying</button>
+            <button class="btn btn-outline-dark">Visiting</button>
+            <button class="btn btn-outline-dark">Giving</button>
+            <button class="btn btn-outline-dark">Careers</button>
+            <button class="btn btn-outline-dark">Faculty Positions</button>
+            <button class="btn btn-outline-dark">Contact</button>
+          </div>
+          <div class="col-md-6 mb-3 d-flex justify-content-end gap-3">
+            <a href="#" class="text-dark"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-dark"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-dark"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="text-dark"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="text-dark"><i class="fab fa-apple"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- Bottom Footer Links -->
+      <div class="row  bg-danger text-white py-3 mx-0">
+        <div class="col-md-2 text-center">
+          <p>Stanford University</p>
+        </div>
+        <div class="col-md-9 d-flex flex-wrap justify-content-center  gap-3">
+          <a href="#" class="text-white text-decoration-none">Stanford Home</a>
+          <a href="#" class="text-white text-decoration-none">Maps & Directions</a>
+          <a href="#" class="text-white text-decoration-none">Search Stanford</a>
+          <a href="#" class="text-white text-decoration-none">Emergency Info</a>
+          <a href="#" class="text-white text-decoration-none">Terms of Use</a>
+          <a href="#" class="text-white text-decoration-none">Privacy</a>
+          <a href="#" class="text-white text-decoration-none">Copyright</a>
+          <a href="#" class="text-white text-decoration-none">Trademarks</a>
+          <a href="#" class="text-white text-decoration-none">Non-Discrimination</a>
+          <a href="#" class="text-white text-decoration-none">Accessibility</a>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center py-2 text-muted bg-danger text-white">
+        © Stanford University. Stanford, California 94305.
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
